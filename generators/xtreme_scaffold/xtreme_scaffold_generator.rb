@@ -46,7 +46,7 @@ class XtremeScaffoldGenerator < Rails::Generator::NamedBase
   end
   
   def new_path
-    "new_#{index_path}"
+    "new_#{controller_singular_name}_path"
   end
   
   def edit_path
