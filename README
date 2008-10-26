@@ -1,11 +1,27 @@
-XtremeScaffold
-==============
+= XtremeScaffold
 
-This is a replacement for the standard scaffold. It creates a _form partial instead of the standar default, it creates list_for lists and supports nested routes! So if you have /posts/comments/ you simply specify --belongs_to post when you scaffold comment. You will get paths like new_post_comment(@post)! I have fixed all those disturbing things in the standard scaffold as I like them, hope you feel like me :) 
+Copyright (c) 2008 Johannes Edelstam, released under the MIT license
 
-Example
-=======
+== Overview
+
+This is a replacement for the standard scaffold. It creates a _form partial instead of the 
+standard default, it creates list_for lists and supports nested routes! 
+
+So if you have /posts/comments/ you simply specify --belongs_to post when you scaffold comment. 
+You will get paths like new_post_comment(@post)! 
+
+I have fixed all those disturbing things in the standard scaffold as I like them, 
+hope you feel like me :) 
+
+== Differences
+
+Changes from the default scaffold bundled with Ruby On Rails
+
+  1) Use list_for plugin for the lists
+  2) Use partials for forms
+  3) Nicer HTML
+
+== Example
 
 script/generate xtreme_scaffold comment --belongs_to post post_id:integer text:text
 
-Copyright (c) 2008 Johannes Edelstam, released under the MIT license
